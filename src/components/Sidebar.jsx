@@ -68,6 +68,7 @@ Welcome {user?.name || "Student"}
 {item("/notes","AI Notes","📘")}
 {item("/planner","Study Planner","📅")}
 {item("/quiz","AI Quiz","🧠")}
+{item("/predict","Performance Predictor","📊")} 
 {item("/roadmap","Roadmap","🛣️")}
 {item("/career","Career Coach","💼")}
 {item("/profile","Profile","👤")}

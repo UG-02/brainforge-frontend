@@ -11,6 +11,7 @@ import Roadmap from "./pages/Roadmap";
 import CareerAI from "./pages/CareerAI";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
+import Predict from "./pages/Predict";
 
 function PrivateRoute({children}){
 const user = localStorage.getItem("currentUser");
@@ -34,7 +35,7 @@ return(
 <Route path="/career" element={<PrivateRoute><CareerAI/></PrivateRoute>}/>
 <Route path="/profile" element={<PrivateRoute><Profile/></PrivateRoute>}/>
 <Route path="/settings" element={<PrivateRoute><Settings/></PrivateRoute>}/>
-
+<Route path="/predict" element={<PrivateRoute><Predict /></PrivateRoute>} />
 <Route path="*" element={<Navigate to="/" />} />
 
 </Routes>
